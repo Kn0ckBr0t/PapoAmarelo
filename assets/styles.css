@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    background-image: url("/papoamarelo/assets/images/Papo Amarelo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+header li {
+    list-style: none;
+    text-decoration: none;
+}
+.header_logo {
+    width: 100%;
+    max-width: 3vw;
+    height: auto;
+    transition: 50ms;
+}
+.header_logo:hover {
+    scale: 1.1;
+}
+header {
+    display: flex;
+    flex: row;
+}
+header ul {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    padding: 15px;
+}
+.header_align--itens {
+    display: flex;
+    gap: 20px;
+}
+.header_align--itens a:hover {
+    color: #000;
+    border-bottom: 2px solid #606060;
+}
+header a {
+    color: #606060;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    transition: color 200ms, border-bottom 200ms;
+    border-bottom: 2px solid transparent;
+}
+.header_logo--href {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+}
+.header_logo--text {
+    align-items: center;
+    height: 100%;
+    font-weight: 600;
+    font-size: 24pt;
+    color: #FFFCE1;
+}
+.home_align {
+    display: flex;
+    justify-content: space-around;
+    padding: 0vw 20vw;
+    gap: 5vw;
+}
+.home_align--span {
+    width: 50%;
+    max-width: 50%;
+}
+
+.home_align--text {
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 55pt;
+    color: #fff;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-bottom: 20vh;
+}
+.home_align--paragraph {
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 16pt;
+    color: #606060;
+    margin: 20px 0;
+}
+
+.home_align--image {
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 70ms;
+}
+.home_align--image:hover {
+    scale: 1.05;
+}
+.home_image {
+    width: 500px;
+    height: auto;
+    transition: opacity 0.5s;
+}
+.cardapio {
+    height: 100vh;
+    max-height: 100vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cardapio--card {
+    height: 12vw;
+    overflow: hidden;
+    object-fit: contain;
+    border-radius: 10px;
+    width: 17vw;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.cardapio--carousel {
+    height: 20vw;
+    width: 80vw;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.cardapio--card__align {
+    display: flex;
+    gap: 4vw;
+    margin: 20px;
+    text-align: center;
+    
+}
+.cardapio--input__align {
+    display: flex;
+    gap: 50vw;
+    margin: 50px;
+}
+.cardapio--input {
+    padding: 10px 20px;
+    border-radius: 16px;
+    outline: none;
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 11pt;
+    border: 1px solid #606060;
+    background: url("/papoamarelo/assets/images/search.png") no-repeat scroll right;
+    background-size: 55px 55px;
+    padding-right: 15px;
+    width: 400px;
+}
+.cardapio--filtrar {
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 11pt;
+    color: #606060;
+    cursor: pointer;
+}.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.carousel-item {
+    min-width: 100%;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.carousel-item.active {
+    opacity: 1;
+}
+.controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.carousel-button {
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    color: #606060;
+    position: absolute;
+    top: 50%;
+    left: 98%;
+}
+.cardapio--card__image {
+    object-fit: cover;
+    width: 20vw;
+    height: auto;
+    transition: 100ms;
+    cursor: pointer;
+}
+.cardapio--card__image:hover {
+    scale: 1.05;
+}
+.cardapio--paragraph__card {
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 10pt;
+    color: #606060;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 20px 0vw;
+}
+.carousel-image {
+    transition: 100ms;
+    object-fit: cover;
+    width: 80vw;
+    height: 20vw;
+}
+.carousel-image:hover {
+    scale: 1.05;
+}
+.aboutus {
+    height: 70vh;
+    background-image: url("/papoamarelo/assets/images/Papo Amarelo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.aboutus_align--paragraph {
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 14pt;
+    color: #606060;
+    margin: 20px 0;
+    width: 50%;
+}
+.about_image {
+    width: 600px;
+    height: auto;
+    transition: opacity 0.5s;
+    border-radius: 500px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.contact {
+    height: 100vh;
+    background: #fff;
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 14pt;
+    color: #606060;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.form-container {
+    height: 100%;
+    background: #fff;
+    padding: 50px;
+    margin: 100px;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group input,
+.form-group textarea {
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    width: 20vw;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ffcc00;
+    outline: none;
+}
+.submit-button {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px;
+    border: none;
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 14pt;
+    color: #606060;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+.submit-button:hover {
+    background-color: #e6b800;
+}
